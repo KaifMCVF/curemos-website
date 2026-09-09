@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms and Conditions — Curemos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        :root {
+            --teal: #0B8192;
+            --teal-dark: #075563;
+            --light: #EEF6F7;
+            --orange: #EC7138;
+            --body: #3D7B8B;
+            --text: #0A0A0A;
+            --white: #FFFFFF;
+            --border: #CFE4E8;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            color: var(--text);
+            background: #fff;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+
+        /* =========================================
+           TERMS HERO
+        ========================================= */
+
+        .terms-hero {
+            position: relative;
+
+            min-height: 320px;
+
+            background:
+                linear-gradient(
+                    106deg,
+                    #0B8192 0%,
+                    #0B8192 46%,
+                    #0A7283 72%,
+                    #075563 100%
+                );
+
+            color: #fff;
+
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+
+        .terms-hero-inner {
+            position: relative;
+            z-index: 2;
+
+            width: 100%;
+            max-width: 800px;
+
+            padding-top: 31px;
+        }
+
+
+        .legal-pill {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 7px 17px;
+
+            border-radius: 20px;
+
+            border: 1px solid rgba(255,255,255,0.30);
+
+            background: rgba(255,255,255,0.10);
+
+            color: #DDF1F3;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+
+        .terms-hero h1 {
+            margin: 23px 0 13px;
+
+            font-size: 49px;
+            line-height: 1.05;
+
+            font-weight: 800;
+
+            letter-spacing: -1.5px;
+        }
+
+
+        .terms-hero-subtitle {
+            max-width: 560px;
+
+            margin: 0 auto;
+
+            color: #C9E5E9;
+
+            font-size: 18px;
+            line-height: 1.45;
+        }
+
+
+        .effective-date {
+            margin-top: 20px;
+
+            color: #A9D5DC;
+
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+
+
+        /* =========================================
+           HERO WAVE
+        ========================================= */
+
+        .hero-wave {
+            position: absolute;
+
+            left: -4%;
+            bottom: -1px;
+
+            width: 108%;
+            height: 48px;
+
+            background: #fff;
+
+            z-index: 3;
+
+            clip-path: ellipse(
+                54% 70%
+                at 49% 100%
+            );
+        }
+
+
+
+        /* =========================================
+           TERMS CONTENT
+        ========================================= */
+
+        .terms-content {
+            width: 100%;
+            max-width: 704px;
+
+            margin: 0 auto;
+
+            padding: 58px 0 70px;
+        }
+
+
+
+        /* =========================================
+           INTRO BOX
+        ========================================= */
+
+        .terms-intro {
+            background: #EEF6F7;
+
+            border: 1px solid #C8E2E7;
+
+            border-radius: 16px;
+
+            padding: 26px 25px;
+
+            margin-bottom: 48px;
+        }
+
+
+        .terms-intro p {
+            margin: 0;
+
+            color: var(--body);
+
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+
+
+        /* =========================================
+           SECTION
+        ========================================= */
+
+        .terms-section {
+            margin-bottom: 38px;
+        }
+
+
+        .terms-section h2 {
+            position: relative;
+
+            margin: 0 0 11px;
+
+            padding-left: 19px;
+
+            font-size: 20px;
+            line-height: 1.3;
+
+            font-weight: 800;
+
+            color: #0A0A0A;
+        }
+
+
+        .terms-section h2::before {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 4px;
+            height: 100%;
+
+            background: var(--teal);
+
+            border-radius: 1px;
+        }
+
+
+        .terms-section p {
+            margin: 0;
+
+            color: var(--body);
+
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+
+
+        /* =========================================
+           LIST
+        ========================================= */
+
+        .terms-list {
+            margin: 8px 0 0;
+
+            padding-left: 28px;
+
+            color: var(--body);
+
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+
+        .terms-list li {
+            margin-bottom: 8px;
+
+            padding-left: 2px;
+        }
+
+
+        .terms-list li::marker {
+            color: var(--teal);
+        }
+
+
+
+        /* =========================================
+           LAST SECTION
+        ========================================= */
+
+        .terms-last {
+            margin-bottom: 0;
+        }
+
+
+
+        /* =========================================
+           LAST UPDATED
+        ========================================= */
+
+        .terms-footer-meta {
+            border-top: 1px solid #CFE4E8;
+
+            margin-top: 48px;
+
+            padding-top: 23px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            color: var(--body);
+
+            font-size: 13px;
+        }
+
+
+        .terms-footer-meta strong {
+            color: #0A0A0A;
+        }
+
+
+        .back-home {
+            color: #087D91;
+
+            font-weight: 700;
+
+            transition: opacity 0.2s ease;
+        }
+
+
+        .back-home:hover {
+            opacity: 0.65;
+        }
+
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 1250px) {
+
+            .terms-content {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+        }
+
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .terms-hero {
+                min-height: 330px;
+            }
+
+
+            .terms-hero-inner {
+                padding: 38px 24px 0;
+            }
+
+
+            .terms-hero h1 {
+                font-size: 40px;
+            }
+
+
+            .terms-hero-subtitle {
+                font-size: 16px;
+            }
+
+
+            .terms-content {
+                padding: 45px 24px 60px;
+            }
+
+        }
+
+
+
+        /* =========================================
+           SMALL MOBILE
+        ========================================= */
+
+        @media (max-width: 700px) {
+
+            .terms-hero {
+                min-height: 350px;
+            }
+
+
+            .terms-hero-inner {
+                padding-top: 35px;
+            }
+
+
+            .terms-hero h1 {
+                font-size: 34px;
+
+                letter-spacing: -0.8px;
+            }
+
+
+            .terms-hero-subtitle {
+                font-size: 15px;
+            }
+
+
+            .effective-date {
+                font-size: 12px;
+            }
+
+
+            .terms-content {
+                padding: 38px 20px 55px;
+            }
+
+
+            .terms-intro {
+                padding: 22px 20px;
+            }
+
+
+            .terms-section {
+                margin-bottom: 32px;
+            }
+
+
+            .terms-section h2 {
+                font-size: 18px;
+            }
+
+
+            .terms-section p,
+            .terms-list {
+                font-size: 14px;
+            }
+
+
+            .terms-footer-meta {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 18px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         SHARED HEADER
+    ========================================= -->
+
+    <div id="shared-header"></div>
+
+
+
+    <!-- =========================================
+         TERMS HERO
+    ========================================= -->
+
+    <section class="terms-hero">
+
+        <div class="terms-hero-inner">
+
+            <div class="legal-pill">
+                Legal
+            </div>
+
+
+            <h1>
+                Terms and Conditions
+            </h1>
+
+
+            <p class="terms-hero-subtitle">
+                Please read these terms carefully before using the Curemos platform.
+            </p>
+
+
+            <div class="effective-date">
+                Effective Date: June 2026
+            </div>
+
+        </div>
+
+
+        <div class="hero-wave"></div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TERMS CONTENT
+    ========================================= -->
+
+    <main>
+
+        <div class="terms-content">
+
+
+            <!-- INTRO -->
+
+            <div class="terms-intro">
+
+                <p>
+                    These Terms and Conditions govern your access to and use
+                    of the Curemos application and services. By creating an
+                    account or using the platform, you agree to be legally
+                    bound by these terms. Curemos is designed exclusively for
+                    licensed medical professionals.
+                </p>
+
+            </div>
+
+
+
+            <!-- 1 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    1. Introduction
+                </h2>
+
+                <p>
+                    Welcome to Curemos ("the App"), a doctor-to-doctor
+                    medical consultation platform. By accessing or using
+                    the App, you agree to be bound by these Terms and
+                    Conditions ("Terms"). If you do not agree to these
+                    Terms, please do not use the App.
+                </p>
+
+            </section>
+
+
+
+            <!-- 2 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    2. Eligibility
+                </h2>
+
+                <p>
+                    The App is intended solely for use by licensed medical
+                    professionals, including General Practitioners (GPs)
+                    and Specialist Doctors. By registering, you confirm
+                    that you hold a valid medical license in your
+                    jurisdiction and are authorized to practice medicine.
+                </p>
+
+            </section>
+
+
+
+            <!-- 3 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    3. Nature of the Platform
+                </h2>
+
+                <p>
+                    Curemos is a communication and consultation tool
+                    designed to facilitate peer-to-peer medical discussions
+                    between licensed doctors. It is not a telemedicine
+                    platform for direct patient care. All consultations
+                    conducted through the App are between medical
+                    professionals only. The App does not provide medical
+                    advice to patients.
+                </p>
+
+            </section>
+
+
+
+            <!-- 4 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    4. User Responsibilities
+                </h2>
+
+                <ul class="terms-list">
+
+                    <li>
+                        Maintain the confidentiality of your login credentials.
+                    </li>
+
+                    <li>
+                        Ensure that all information provided during registration
+                        is accurate and up to date.
+                    </li>
+
+                    <li>
+                        Use the App in compliance with applicable laws,
+                        medical ethics, and professional standards.
+                    </li>
+
+                    <li>
+                        Obtain appropriate patient consent before sharing
+                        any patient-related information on the platform.
+                    </li>
+
+                    <li>
+                        Not share, distribute, or disclose any confidential
+                        information obtained through the App.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- 5 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    5. Patient Confidentiality and Data Privacy
+                </h2>
+
+                <p>
+                    Users must comply with all applicable data protection
+                    laws, including but not limited to the Information
+                    Technology Act, 2000 (India), and any applicable health
+                    data regulations. Do not share identifiable patient
+                    information unless absolutely necessary and with
+                    appropriate consent. Curemos employs industry-standard
+                    encryption and security measures to protect data
+                    transmitted through the platform.
+                </p>
+
+            </section>
+
+
+
+            <!-- 6 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    6. Professional Conduct
+                </h2>
+
+                <p>
+                    All users are expected to maintain the highest standards
+                    of professional conduct. Any form of harassment,
+                    discrimination, or unethical behavior will result in
+                    immediate suspension or termination of access. Curemos
+                    reserves the right to report any illegal activity to
+                    the relevant authorities.
+                </p>
+
+            </section>
+
+
+
+            <!-- 7 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    7. Limitation of Liability
+                </h2>
+
+                <p>
+                    Curemos is a communication platform and does not assume
+                    responsibility for the accuracy, completeness, or
+                    appropriateness of any medical advice exchanged between
+                    users. The platform is not liable for any clinical
+                    decisions made based on consultations conducted through
+                    the App. Users are solely responsible for their
+                    professional judgments and actions.
+                </p>
+
+            </section>
+
+
+
+            <!-- 8 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    8. Intellectual Property
+                </h2>
+
+                <p>
+                    All content, trademarks, logos, and intellectual property
+                    associated with Curemos are the exclusive property of
+                    the company. Users may not reproduce, distribute, or
+                    create derivative works without prior written consent.
+                </p>
+
+            </section>
+
+
+
+            <!-- 9 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    9. Termination
+                </h2>
+
+                <p>
+                    Curemos reserves the right to suspend or terminate any
+                    user account at its sole discretion, including for
+                    violations of these Terms, fraudulent activity, or
+                    conduct deemed harmful to the platform or its users.
+                </p>
+
+            </section>
+
+
+
+            <!-- 10 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    10. Amendments
+                </h2>
+
+                <p>
+                    Curemos may update these Terms from time to time.
+                    Users will be notified of significant changes via the
+                    App or registered email. Continued use of the App after
+                    such changes constitutes acceptance of the revised Terms.
+                </p>
+
+            </section>
+
+
+
+            <!-- 11 -->
+
+            <section class="terms-section">
+
+                <h2>
+                    11. Governing Law
+                </h2>
+
+                <p>
+                    These Terms shall be governed by and construed in
+                    accordance with the laws of India. Any disputes arising
+                    out of or in connection with these Terms shall be subject
+                    to the exclusive jurisdiction of the courts in Hyderabad,
+                    Telangana, India.
+                </p>
+
+            </section>
+
+
+
+            <!-- 12 -->
+
+            <section class="terms-section terms-last">
+
+                <h2>
+                    12. Contact Us
+                </h2>
+
+                <p>
+                    If you have any questions about these Terms and
+                    Conditions, please contact us at
+                    <a href="mailto:support@curemos.com">
+                        support@curemos.com
+                    </a>.
+                </p>
+
+            </section>
+
+
+
+            <!-- LAST UPDATED -->
+
+            <div class="terms-footer-meta">
+
+                <div>
+                    Last updated:
+                    <strong>June 2026</strong>
+                </div>
+
+
+                <a
+                    href="index.html"
+                    class="back-home"
+                >
+                    ← Back to Home
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         SHARED FOOTER
+    ========================================= -->
+
+    <div id="shared-footer"></div>
+
+
+
+    <!-- =========================================
+         LOAD SHARED HEADER + FOOTER
+    ========================================= -->
+
+    <script>
+
+        fetch("components/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("shared-header").innerHTML = data;
+            });
+
+
+        fetch("components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("shared-footer").innerHTML = data;
+            });
+
+    </script>
+
+
+</body>
+
+</html>

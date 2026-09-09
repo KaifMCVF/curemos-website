@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marketing Policy — Curemos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111827;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .policy-hero {
+            height: 327px;
+            background: #128397;
+
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            padding-top: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 30px;
+            padding: 0 17px;
+
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            background: rgba(255, 255, 255, 0.10);
+
+            color: #ffffff;
+
+            border-radius: 18px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            margin-bottom: 14px;
+        }
+
+        .hero-content h1 {
+            color: #ffffff;
+
+            font-size: 48px;
+            line-height: 1.1;
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            max-width: 570px;
+            margin: 0 auto;
+
+            color: rgba(255, 255, 255, 0.82);
+
+            font-size: 19px;
+            line-height: 1.45;
+        }
+
+        .effective-date {
+            margin-top: 17px;
+
+            color: rgba(255, 255, 255, 0.63);
+
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+
+        /* =========================
+           WAVE
+        ========================= */
+
+        .policy-hero::after {
+            content: "";
+
+            position: absolute;
+            left: -5%;
+            bottom: -35px;
+
+            width: 110%;
+            height: 70px;
+
+            background: #ffffff;
+
+            border-radius: 50% 50% 0 0 / 45% 45% 0 0;
+        }
+
+
+        /* =========================
+           POLICY CONTENT
+        ========================= */
+
+        .policy-content {
+            width: 704px;
+            max-width: calc(100% - 40px);
+
+            margin: 0 auto;
+
+            padding-top: 80px;
+            padding-bottom: 55px;
+        }
+
+
+        /* =========================
+           INTRO BOX
+        ========================= */
+
+        .policy-intro {
+            background: #eef7f8;
+
+            border: 1px solid #c7e4e8;
+
+            border-radius: 16px;
+
+            padding: 23px 24px;
+
+            margin-bottom: 47px;
+        }
+
+        .policy-intro p {
+            color: #36758a;
+
+            font-size: 15px;
+            line-height: 1.58;
+        }
+
+
+        /* =========================
+           POLICY SECTIONS
+        ========================= */
+
+        .policy-section {
+            margin-bottom: 38px;
+        }
+
+        .policy-section h2 {
+            position: relative;
+
+            font-size: 20px;
+            line-height: 1.35;
+
+            font-weight: 700;
+
+            color: #111111;
+
+            padding-left: 19px;
+
+            margin-bottom: 12px;
+        }
+
+        .policy-section h2::before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 1px;
+
+            width: 4px;
+            height: 28px;
+
+            background: #128397;
+        }
+
+        .policy-section h3 {
+            color: #111111;
+
+            font-size: 15px;
+            line-height: 1.4;
+
+            font-weight: 700;
+
+            margin-top: 17px;
+            margin-bottom: 6px;
+        }
+
+        .policy-section p {
+            color: #34748a;
+
+            font-size: 15px;
+            line-height: 1.62;
+
+            margin-bottom: 12px;
+        }
+
+        .policy-section ul {
+            padding-left: 27px;
+            margin: 0;
+        }
+
+        .policy-section li {
+            color: #34748a;
+
+            font-size: 15px;
+            line-height: 1.55;
+
+            margin-bottom: 5px;
+
+            padding-left: 1px;
+        }
+
+        .policy-section li::marker {
+            color: #83c2cc;
+            font-size: 17px;
+        }
+
+        .policy-section strong {
+            color: #111111;
+        }
+
+
+        /* =========================
+           BOTTOM LINKS
+        ========================= */
+
+        .policy-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding-top: 5px;
+            margin-top: 10px;
+
+            color: #34748a;
+
+            font-size: 14px;
+        }
+
+        .last-updated strong {
+            color: #111111;
+        }
+
+        .policy-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .policy-links a {
+            color: #117c90;
+
+            text-decoration: none;
+
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .policy-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .policy-hero {
+                height: 330px;
+            }
+
+            .hero-content {
+                padding: 30px 20px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-subtitle {
+                font-size: 17px;
+            }
+
+            .policy-content {
+                width: auto;
+
+                max-width: calc(100% - 30px);
+
+                padding-top: 65px;
+            }
+
+            .policy-intro {
+                padding: 20px;
+
+                margin-bottom: 38px;
+            }
+
+            .policy-section {
+                margin-bottom: 34px;
+            }
+
+            .policy-section h2 {
+                font-size: 18px;
+            }
+
+            .policy-section p,
+            .policy-section li,
+            .policy-intro p {
+                font-size: 14px;
+            }
+
+            .policy-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 15px;
+            }
+
+            .policy-links {
+                gap: 18px;
+
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SHARED HEADER
+    ========================== -->
+
+    <div id="shared-header"></div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="policy-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Legal
+            </div>
+
+            <h1>
+                Marketing Policy
+            </h1>
+
+            <p class="hero-subtitle">
+                How Curemos communicates with users and handles data for
+                marketing purposes.
+            </p>
+
+            <p class="effective-date">
+                Effective Date: August 2026
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MARKETING POLICY
+    ========================== -->
+
+    <main class="policy-content">
+
+
+        <!-- INTRO -->
+
+        <div class="policy-intro">
+
+            <p>
+                This Marketing Policy explains how Curemos communicates with
+                registered users for promotional and informational purposes,
+                and how we use personal data in the context of marketing.
+                Curemos is committed to transparent, consent-based
+                communication and does not sell user data to third parties.
+                This policy is intended to satisfy the requirements of the
+                Apple App Store and Google Play Store for app publication.
+            </p>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="policy-section">
+
+            <h2>
+                1. Overview
+            </h2>
+
+            <p>
+                This Marketing Policy describes how Curemos ("we", "our", or
+                "the App") communicates with its users for marketing and
+                promotional purposes, and how we handle user data in the
+                context of marketing activities. This policy applies to all
+                registered users of the Curemos platform and supplements our
+                Privacy Policy and Terms and Conditions.
+            </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="policy-section">
+
+            <h2>
+                2. Who This Policy Applies To
+            </h2>
+
+            <p>
+                This policy applies to licensed medical professionals who have
+                registered on the Curemos platform. Curemos is a doctor-to-doctor
+                consultation platform and is not intended for use by patients
+                or the general public. All marketing communications are
+                directed exclusively at verified medical professionals.
+            </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="policy-section">
+
+            <h2>
+                3. Types of Communications We Send
+            </h2>
+
+            <h3>
+                a. Transactional &amp; Service Communications
+            </h3>
+
+            <ul>
+
+                <li>
+                    Account registration confirmations and onboarding guidance
+                </li>
+
+                <li>
+                    Consultation request notifications and reminders
+                </li>
+
+                <li>
+                    Security alerts and account activity notifications
+                </li>
+
+                <li>
+                    Policy updates and changes to Terms or Privacy Policy
+                </li>
+
+                <li>
+                    Technical support responses and service announcements
+                </li>
+
+            </ul>
+
+
+            <h3>
+                b. Marketing &amp; Promotional Communications
+            </h3>
+
+            <ul>
+
+                <li>
+                    New feature announcements and product updates
+                </li>
+
+                <li>
+                    Educational content relevant to medical professionals
+                </li>
+
+                <li>
+                    Platform usage tips and best practices
+                </li>
+
+                <li>
+                    Invitations to participate in surveys or feedback programs
+                </li>
+
+                <li>
+                    Information about partnerships with medical institutions
+                    or associations
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="policy-section">
+
+            <h2>
+                4. How We Collect Marketing Consent
+            </h2>
+
+            <p>
+                We collect your consent to receive marketing communications
+                at the time of registration through an explicit opt-in
+                checkbox. You will not receive promotional communications
+                unless you have affirmatively opted in. Transactional and
+                service-related communications are sent regardless of
+                marketing preferences, as they are necessary for
+                the operation of the platform.
+            </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="policy-section">
+
+            <h2>
+                5. Use of Personal Data in Marketing
+            </h2>
+
+            <p>
+                We use the following data solely to personalise and improve
+                the relevance of our communications:
+            </p>
+
+            <ul>
+
+                <li>
+                    Your name and professional title
+                    (for personalised salutations)
+                </li>
+
+                <li>
+                    Your medical specialization
+                    (to send relevant clinical content)
+                </li>
+
+                <li>
+                    Your geographic location
+                    (to send region-specific updates or regulatory information)
+                </li>
+
+                <li>
+                    Your app usage patterns
+                    (to suggest features you may not have used)
+                </li>
+
+                <li>
+                    Your communication preferences
+                    (to respect opt-out choices)
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="policy-section">
+
+            <h2>
+                6. No Sale of Personal Data
+            </h2>
+
+            <p>
+                Curemos does not sell, rent, or share your personal information
+                with third-party advertisers or marketing agencies. We do not
+                use your data for targeted advertising on external platforms
+                (such as social media networks or search engines) without your
+                explicit consent. Any third-party service providers involved
+                in delivering our communications (e.g., email delivery
+                services) are bound by strict data processing agreements and
+                may not use your data for their own marketing purposes.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="policy-section">
+
+            <h2>
+                7. In-App Communications
+            </h2>
+
+            <p>
+                Curemos may display informational banners, tooltips, or
+                notifications within the application to inform you of new
+                features, updates, or relevant professional content. These
+                in-app messages are part of the platform experience and are
+                not subject to marketing opt-out preferences. They do not
+                involve sharing your data with third parties.
+            </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="policy-section">
+
+            <h2>
+                8. Push Notifications
+            </h2>
+
+            <p>
+                If you have enabled push notifications on your device, Curemos
+                may send you push notifications for both service-related and
+                marketing purposes. You can manage push notification
+                preferences at any time through your device's operating
+                system settings or within the Curemos app settings.
+                Disabling push notifications will not affect your ability
+                to use the platform.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="policy-section">
+
+            <h2>
+                9. Email Marketing
+            </h2>
+
+            <p>
+                Marketing emails are sent only to users who have opted in to
+                receive them. Every marketing email includes a clearly visible
+                unsubscribe link. Clicking the unsubscribe link will remove
+                you from our marketing mailing list within 10 business days.
+                Unsubscribing from marketing emails will not affect
+                transactional or service communications.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="policy-section">
+
+            <h2>
+                10. How to Opt Out
+            </h2>
+
+            <p>
+                You may withdraw your consent to receive marketing
+                communications at any time through any of the following
+                methods:
+            </p>
+
+            <ul>
+
+                <li>
+                    Clicking the "Unsubscribe" link in any marketing email
+                </li>
+
+                <li>
+                    Updating your communication preferences in the Curemos
+                    app under Settings → Notifications
+                </li>
+
+                <li>
+                    Contacting us directly at support@curemos.app with the
+                    subject line "Marketing Opt-Out"
+                </li>
+
+                <li>
+                    Disabling push notifications through your device operating
+                    system settings
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="policy-section">
+
+            <h2>
+                11. Cookies and Tracking Technologies
+            </h2>
+
+            <p>
+                Our website (curemos.com) may use cookies and similar
+                technologies to understand how visitors interact with our
+                content and to measure the effectiveness of our marketing
+                campaigns. We use this data in aggregate and anonymised form
+                only. You can manage cookie preferences through your browser
+                settings or through the cookie consent banner displayed on
+                our website. For full details, please refer to our Privacy
+                Policy.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="policy-section">
+
+            <h2>
+                12. Third-Party Links and Endorsements
+            </h2>
+
+            <p>
+                Marketing communications from Curemos may occasionally include
+                links to third-party websites, publications, or resources
+                relevant to medical professionals. Inclusion of such links
+                does not constitute an endorsement of the third party.
+                Curemos is not responsible for the content, privacy practices,
+                or marketing policies of any third-party websites.
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section class="policy-section">
+
+            <h2>
+                13. Compliance with Applicable Laws
+            </h2>
+
+            <p>
+                Our marketing practices comply with applicable laws and
+                regulations, including:
+            </p>
+
+            <ul>
+
+                <li>
+                    The Information Technology Act, 2000 (India) and
+                    associated rules
+                </li>
+
+                <li>
+                    The Telecom Commercial Communications Customer Preference
+                    Regulations (TRAI)
+                </li>
+
+                <li>
+                    The General Data Protection Regulation (GDPR) where
+                    applicable to users in the European Economic Area
+                </li>
+
+                <li>
+                    The CAN-SPAM Act where applicable to users in the
+                    United States
+                </li>
+
+                <li>
+                    Apple App Store and Google Play Store guidelines on
+                    user communications
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section class="policy-section">
+
+            <h2>
+                14. Children and Minors
+            </h2>
+
+            <p>
+                Curemos is intended exclusively for licensed medical
+                professionals aged 18 and above. We do not knowingly market
+                to or collect data from minors. If we become aware that
+                marketing communications have been sent to a minor, we will
+                immediately remove them from all marketing lists and delete
+                any associated data.
+            </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section class="policy-section">
+
+            <h2>
+                15. Changes to This Policy
+            </h2>
+
+            <p>
+                We may update this Marketing Policy from time to time to
+                reflect changes in our practices, technology, or legal
+                requirements. We will notify registered users of material
+                changes via email or in-app notification. Your continued use
+                of the platform following such notification constitutes
+                acceptance of the updated policy. The effective date at the
+                top of this page will be updated accordingly.
+            </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section class="policy-section">
+
+            <h2>
+                16. Contact Us
+            </h2>
+
+            <p>
+                If you have any questions, concerns, or requests regarding
+                this Marketing Policy or our communications practices, please
+                contact us at:
+            </p>
+
+            <p>
+                Email: <strong>support@curemos.app</strong>
+            </p>
+
+            <p>
+                Website:
+                <strong>curemos.com/contact</strong>
+            </p>
+
+            <p>
+                We aim to respond to all enquiries within 5 business days.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             BOTTOM NAVIGATION
+        ========================== -->
+
+        <div class="policy-bottom">
+
+            <div class="last-updated">
+                Last updated:
+                <strong>August 2026</strong>
+            </div>
+
+            <div class="policy-links">
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         SHARED FOOTER
+    ========================== -->
+
+    <div id="shared-footer"></div>
+
+
+    <!-- =========================
+         LOAD SHARED COMPONENTS
+    ========================== -->
+
+    <script>
+
+        fetch("components/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("shared-header").innerHTML = data;
+            });
+
+
+        fetch("components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("shared-footer").innerHTML = data;
+            });
+
+    </script>
+
+
+</body>
+</html>

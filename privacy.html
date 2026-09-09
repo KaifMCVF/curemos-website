@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy — Curemos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111827;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        
+        /* =========================
+           HERO
+        ========================= */
+
+        .privacy-hero {
+            height: 327px;
+            background: #128397;
+
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            overflow: hidden;
+        }
+
+        .hero-content {
+            padding-top: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 30px;
+            padding: 0 17px;
+
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            background: rgba(255, 255, 255, 0.10);
+
+            color: #ffffff;
+
+            border-radius: 18px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            margin-bottom: 14px;
+        }
+
+        .hero-content h1 {
+            color: #ffffff;
+            font-size: 48px;
+            line-height: 1.1;
+            font-weight: 700;
+
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            max-width: 570px;
+            margin: 0 auto;
+
+            color: rgba(255, 255, 255, 0.82);
+
+            font-size: 19px;
+            line-height: 1.45;
+        }
+
+        .effective-date {
+            margin-top: 17px;
+
+            color: rgba(255, 255, 255, 0.63);
+
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* WAVE AT BOTTOM */
+
+        .privacy-hero::after {
+            content: "";
+
+            position: absolute;
+            left: -5%;
+            bottom: -35px;
+
+            width: 110%;
+            height: 70px;
+
+            background: #ffffff;
+
+            border-radius: 50% 50% 0 0 / 45% 45% 0 0;
+        }
+
+        /* =========================
+           PRIVACY CONTENT
+        ========================= */
+
+        .privacy-content {
+            width: 704px;
+            max-width: calc(100% - 40px);
+
+            margin: 0 auto;
+
+            padding-top: 80px;
+            padding-bottom: 55px;
+        }
+
+        /* INTRO BOX */
+
+        .privacy-intro {
+            background: #eef7f8;
+
+            border: 1px solid #c7e4e8;
+
+            border-radius: 16px;
+
+            padding: 23px 24px;
+
+            margin-bottom: 47px;
+        }
+
+        .privacy-intro p {
+            color: #36758a;
+
+            font-size: 15px;
+            line-height: 1.58;
+        }
+
+        /* SECTIONS */
+
+        .policy-section {
+            margin-bottom: 38px;
+        }
+
+        .policy-section h2 {
+            position: relative;
+
+            font-size: 20px;
+            line-height: 1.35;
+
+            font-weight: 700;
+
+            color: #111111;
+
+            padding-left: 19px;
+
+            margin-bottom: 12px;
+        }
+
+        .policy-section h2::before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 1px;
+
+            width: 4px;
+            height: 28px;
+
+            background: #128397;
+        }
+
+        .policy-section p {
+            color: #34748a;
+
+            font-size: 15px;
+            line-height: 1.62;
+
+            margin-bottom: 12px;
+        }
+
+        .policy-section h3 {
+            color: #111111;
+
+            font-size: 15px;
+            line-height: 1.4;
+
+            font-weight: 700;
+
+            margin-top: 17px;
+            margin-bottom: 6px;
+        }
+
+        .policy-section ul {
+            padding-left: 27px;
+            margin: 0;
+        }
+
+        .policy-section li {
+            color: #34748a;
+
+            font-size: 15px;
+            line-height: 1.55;
+
+            margin-bottom: 5px;
+
+            padding-left: 1px;
+        }
+
+        .policy-section li::marker {
+            color: #83c2cc;
+            font-size: 17px;
+        }
+
+        /* =========================
+           BOTTOM POLICY NAV
+        ========================= */
+
+        .policy-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding-top: 5px;
+            margin-top: 10px;
+
+            color: #34748a;
+
+            font-size: 14px;
+        }
+
+        .last-updated strong {
+            color: #111111;
+        }
+
+        .policy-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        .policy-links a {
+            color: #117c90;
+            text-decoration: none;
+
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .policy-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav-shell {
+                padding: 0 30px;
+            }
+
+            .main-nav {
+                margin-left: 0;
+                gap: 20px;
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .site-header,
+            .nav-shell {
+                height: 78px;
+            }
+
+            .nav-shell {
+                padding: 0 20px;
+            }
+
+            .brand img {
+                width: 100px;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .coming-btn {
+                min-width: 112px;
+                padding: 8px 13px;
+                font-size: 11px;
+            }
+
+            .privacy-hero {
+                height: 330px;
+            }
+
+            .hero-content {
+                padding: 30px 20px 0;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-subtitle {
+                font-size: 17px;
+            }
+
+            .privacy-content {
+                width: auto;
+                max-width: calc(100% - 30px);
+
+                padding-top: 65px;
+            }
+
+            .privacy-intro {
+                padding: 20px;
+                margin-bottom: 38px;
+            }
+
+            .policy-section {
+                margin-bottom: 34px;
+            }
+
+            .policy-section h2 {
+                font-size: 18px;
+            }
+
+            .policy-section p,
+            .policy-section li,
+            .privacy-intro p {
+                font-size: 14px;
+            }
+
+            .policy-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .policy-links {
+                gap: 18px;
+            }
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <div id="shared-header"></div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="privacy-hero">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Legal
+            </div>
+
+            <h1>
+                Privacy Policy
+            </h1>
+
+            <p class="hero-subtitle">
+                How we collect, use, and protect your data on the Curemos platform.
+            </p>
+
+            <p class="effective-date">
+                Effective Date: June 2026
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVACY CONTENT
+    ========================== -->
+
+    <main class="privacy-content">
+
+        <!-- INTRO -->
+
+        <div class="privacy-intro">
+
+            <p>
+                Your privacy is important to us. This policy applies to all users
+                of the Curemos platform and describes our practices regarding
+                personal and professional data. Curemos is built exclusively for
+                licensed medical professionals and handles all data with
+                clinical-grade confidentiality.
+            </p>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="policy-section">
+
+            <h2>1. Introduction</h2>
+
+            <p>
+                Curemos ("we", "our", or "the App") is committed to protecting
+                the privacy and confidentiality of its users. This Privacy Policy
+                explains how we collect, use, store, and protect information when
+                you use the Curemos platform. By using the App, you consent to
+                the practices described in this policy.
+            </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="policy-section">
+
+            <h2>2. Who We Are</h2>
+
+            <p>
+                Curemos is a doctor-to-doctor medical consultation platform
+                designed exclusively for licensed medical professionals. We are
+                not a patient-facing platform and do not provide direct medical
+                services to patients.
+            </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="policy-section">
+
+            <h2>3. Information We Collect</h2>
+
+
+            <h3>a. Registration Information</h3>
+
+            <ul>
+                <li>Full name and professional title</li>
+                <li>Medical registration number and licensing details</li>
+                <li>Specialization and institution affiliation</li>
+                <li>Contact information (email address, phone number)</li>
+                <li>Profile photograph (optional)</li>
+            </ul>
+
+
+            <h3>b. Usage Data</h3>
+
+            <ul>
+                <li>Consultation logs (date, time, duration)</li>
+                <li>Communication metadata and related activity information</li>
+                <li>Device information and IP address</li>
+                <li>App usage analytics</li>
+            </ul>
+
+
+            <h3>c. Communication Content</h3>
+
+            <ul>
+                <li>Text messages exchanged during consultations</li>
+                <li>Audio and video recordings where explicitly enabled</li>
+                <li>Shared clinical notes, images, or documents</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="policy-section">
+
+            <h2>4. How We Use Your Information</h2>
+
+            <ul>
+                <li>To verify your identity and medical credentials</li>
+                <li>To facilitate doctor-to-doctor consultations</li>
+                <li>To improve platform performance and user experience</li>
+                <li>To send important service notifications and updates</li>
+                <li>To comply with legal and regulatory obligations</li>
+                <li>To detect and prevent fraudulent or unauthorized activity</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="policy-section">
+
+            <h2>5. Patient Data and Confidentiality</h2>
+
+            <p>
+                Curemos does not collect patient data directly. However, users
+                may share patient-related information during consultations.
+                Users are responsible for ensuring that appropriate patient
+                consent has been obtained before sharing identifiable health
+                information.
+            </p>
+
+            <p>
+                We strongly advise against sharing directly identifiable patient
+                information unless it is necessary. Any patient data shared
+                through the platform receives the same security protections as
+                other platform data.
+            </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="policy-section">
+
+            <h2>6. Data Storage and Security</h2>
+
+            <p>
+                Data transmitted through Curemos is protected using
+                industry-standard TLS/SSL protocols. Data is stored on secure
+                servers with restricted access, supported by technical and
+                organizational measures designed to protect against unauthorized
+                access, alteration, disclosure, or destruction.
+            </p>
+
+            <p>
+                While reasonable precautions are taken, no method of transmission
+                over the internet can be guaranteed to be completely secure.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="policy-section">
+
+            <h2>7. Data Sharing and Disclosure</h2>
+
+            <p>
+                Curemos does not sell, rent, or trade personal information to
+                third parties. Information may be shared only when necessary,
+                including:
+            </p>
+
+            <ul>
+                <li>With your explicit consent</li>
+                <li>With trusted service providers operating under confidentiality obligations</li>
+                <li>When required by law, court order, or regulatory authority</li>
+                <li>To protect the rights, safety, or property of Curemos or its users</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="policy-section">
+
+            <h2>8. Data Retention</h2>
+
+            <p>
+                Personal data may be retained while your account remains active
+                or for periods required by applicable law. Consultation records
+                may be retained where required by medical or regulatory
+                requirements. Users may request deletion of their account and
+                associated data subject to applicable legal obligations.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="policy-section">
+
+            <h2>9. Your Rights</h2>
+
+            <p>
+                As a Curemos user, you may have the right to:
+            </p>
+
+            <ul>
+                <li>Access the personal data held about you</li>
+                <li>Request correction of inaccurate or incomplete information</li>
+                <li>Request deletion of personal data subject to legal obligations</li>
+                <li>Withdraw consent where consent is the applicable legal basis</li>
+                <li>Lodge a complaint with the relevant data protection authority</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="policy-section">
+
+            <h2>10. Cookies and Tracking</h2>
+
+            <p>
+                The Curemos platform may use cookies and similar technologies
+                to improve user experience and understand usage patterns.
+                Cookie settings can be controlled through your device or
+                browser settings. Disabling cookies may affect certain
+                platform features.
+            </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="policy-section">
+
+            <h2>11. Third-Party Services</h2>
+
+            <p>
+                Curemos may integrate third-party services for functionality
+                such as video calling, analytics, or cloud storage. Such
+                providers may have their own privacy policies. Users are
+                encouraged to review those policies before using related
+                services.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="policy-section">
+
+            <h2>12. Children's Privacy</h2>
+
+            <p>
+                Curemos is intended solely for licensed medical professionals
+                aged 18 and above. We do not knowingly collect information from
+                minors. If we become aware that a minor has registered, we will
+                take appropriate steps to delete the account and associated data.
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section class="policy-section">
+
+            <h2>13. Changes to This Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated from time to time to reflect
+                changes in our practices or legal requirements. Significant
+                changes may be communicated through the App or registered email.
+            </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section class="policy-section">
+
+            <h2>14. Contact Us</h2>
+
+            <p>
+                If you have questions, concerns, or requests regarding this
+                Privacy Policy or your personal data, please contact the
+                Curemos team at:
+            </p>
+
+            <p>
+                <strong>support@curemos.com</strong>
+            </p>
+
+        </section>
+
+
+        <!-- BOTTOM -->
+
+        <div class="policy-bottom">
+
+            <div class="last-updated">
+                Last updated: <strong>June 2026</strong>
+            </div>
+
+            <div class="policy-links">
+
+                <a href="terms.html">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <div id="shared-footer"></div>
+<script>
+fetch("components/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("shared-header").innerHTML = data;
+    });
+</script>
+
+<script>
+fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("shared-footer").innerHTML = data;
+    });
+</script>
+</body>
+</html>
